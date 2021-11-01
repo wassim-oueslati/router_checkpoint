@@ -37,7 +37,7 @@ function App() {
 
   return (
     <BrowserRouter>
-      <Route path="/Home">
+      <Route exact path="/">
          <Home movies={movies} setMovies={setMovies}/>
       </Route> 
       <Route path="/trailer/:movieId">

@@ -9,7 +9,7 @@ function Trailer({movies}) {
     return (
         <div className="trailer">
             <div>
-            <Button><Link to="/Home" className="links">Home</Link></Button>
+            <Button><Link to="/" className="links">Home</Link></Button>
             </div>
             
             {movies.find((film) => film.id=== Number(movieId)).trailerURL}
