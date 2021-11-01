@@ -9,8 +9,7 @@ function MovieList({movies,input,ratingg}) {
       <div className="listMovies">
             {movies
             .filter((el) => (el.title.toLowerCase().includes(input)) && (el.rating>=ratingg) )
-            .map((movie, index) => <MovieCard movie={movie} />
-                             
+            .map((movie, index) => <MovieCard movie={movie} />                 
             )}
         </div>
         
